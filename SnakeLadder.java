@@ -33,6 +33,9 @@ public class SnakeLadder {
 		
 			case LADDER :
 				pos+=number_on_dice;
+				if(pos>WINNING_POS) {
+					pos-=number_on_dice;
+				}
 				System.out.println("Up on the ladder, new position is "+pos);
 				break;
 				
