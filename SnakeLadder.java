@@ -14,12 +14,14 @@ public class SnakeLadder {
 		
 		//Initialising the postion 
 		int pos=0;
+		int dice_rolls=0;
 
 		//Continue to play until final position reached
 		while(pos!=WINNING_POS) {
 		//Generating random between 1 to 6
 		int number_on_dice= 1 + (int)(Math.random() * ((6 - 1) + 1));
 		System.out.println("random number is "+number_on_dice );
+		dice_rolls++;
 		
 		//Generating options
 		int option = (int) Math.floor(Math.random()*10)%3;
@@ -48,6 +50,7 @@ public class SnakeLadder {
 				break;
 		}
 		}
+		System.out.println("Number of dice rolls to win the game "+dice_rolls);
 	}
 }
 		
