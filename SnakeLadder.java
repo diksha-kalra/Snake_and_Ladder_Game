@@ -14,7 +14,7 @@ public class SnakeLadder {
 		
 		//Initialising the postion 
 		int pos=0;
-		
+
 		//Continue to play until final position reached
 		while(pos!=WINNING_POS) {
 		//Generating random between 1 to 6
